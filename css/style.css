@@ -1,0 +1,265 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* background-color:rgb(33, 37, 41); */
+   background: linear-gradient(to bottom, #ff0084 0%,#ff0084 100%);  
+
+}
+
+/* Navigation Bar Styles */
+ .main-container {
+  background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  
+} 
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo span {
+  font-size: 18px;
+}
+
+.logo img {
+  width: 50px;
+  
+
+
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #fff;
+  color:black;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+ @media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+} 
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size)*/
+@media screen and (max-height: 450px){
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.hero-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  height: 50px;
+  
+  
+}
+ .hero-container a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  padding: 12px 10px;
+  transition: 0.5s ease;
+ }
+ .hero-container a:hover {
+  background-color: black;
+  color: #fff;
+ }
+ .list-menu li {
+  margin-bottom: 0px;
+ }
+ 
+
+
+/* Main Content Styles */
+.content-box {
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding-bottom: 55px;
+ 
+   
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+
+}
+
+.image-container img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover; 
+}
+.image-container img:hover {
+  border-bottom:6px solid black;
+} 
+
+
+.club-logo {
+
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.club-logo img {
+  width: 100%; /* Make logos fill the container */
+}
+
+/* Footer Styles */
+.footer {
+  
+  color: white;
+  padding: 10px;
+  width: 100%;
+  position: fixed; 
+  bottom: 0; 
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 10px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  
+
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: 0.5s ease;
+  padding: 11px 10px;
+  font-size: 16px;
+
+}
+
+.footer-links a:hover {
+  background-color: #fff;
+  color: black;
+  font-weight: bold;
+}
+/* Add this to your existing CSS */
+.sidebar.open {
+  left: 0;
+}
+
+.top-news {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-news a {
+  text-decoration: none;
+  padding: 0px 15px;
+  font-size: 20px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .live-scores {
+    margin-top: 15px;
+  }
+  .image-container img {
+    width: 50px;
+    height: 50px; 
+  }
+  .logo span {
+    font-size: 16px;
+  }
+  .hero-container a {
+    font-size: 16px;
+  }
+  .hero-container {
+    height: 50px;
+  }
+  .footer-links {
+    margin-left: 20px;
+  }
+  
+}
+
